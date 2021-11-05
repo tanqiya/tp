@@ -29,7 +29,7 @@ public class ProfileCommand extends Command {
             + PREFIX_NAME + " John Doe "
             + PREFIX_ROLE + " Telemarketer";
 
-    public static final String MESSAGE_PROFILE_SUCCESS = "User profile set.\n%1$s";
+    public static final String MESSAGE_PROFILE_SUCCESS = "User profile set\n%1$s";
     public static final String MESSAGE_INVALID_ROLE = "Please indicate either \"Telemarketer\" or \"Supervisor\""
             + " as your role.";
 
