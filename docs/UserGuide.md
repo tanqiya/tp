@@ -127,7 +127,7 @@ Command | Format
   e.g. in `add -n NAME`, `NAME` is a parameter which can be used as `add -n John Doe`.
 
 * Items in square brackets are optional.<br>
-  e.g `-n NAME [-t TAG]` can be used as `-n John Doe -t friend` or as `-n John Doe`.
+  e.g. `-n NAME [-t TAG]` can be used as `-n John Doe -t friend` or as `-n John Doe`.
 
 * Items with `…`​ after them can be used multiple times or left blank.<br>
   e.g. `[-t TAG]…​` can be used as ` ` (i.e. 0 times), `-t friend`, `-t friend -t family` etc.
@@ -199,8 +199,10 @@ If the format of the selected data file is invalid, Teletubbies will start with 
 The `merge` command is a special kind of importing, and it will help you to merge a set of customer contact data 
 with the current data inside the application. 
 
-**This command should only be used if you are sure that you want to combine the new data to be imported with 
-the current data in the application. The new data will overwrite the current data, so be careful!**
+<div markdown="span" class="alert alert-warning">:exclamation: Caution:
+This command should only be used if you are sure that you want to combine the new data to be imported with 
+the current data in the application. The new data will overwrite the current data, so be careful!
+</div>
 
 You can issue this command by either typing it into the CLI (`merge`), or going to the menu bar at the top and
 selecting `File -> Merge`. Once the command is issued, *Teletubbies* will open a file selector window as shown below.
@@ -229,7 +231,7 @@ If you decide to cancel the export, you can type in any other command. *Teletubb
 for you as long as the next command received is NOT `y`.
 
 After export has been confirmed, *Teletubbies* will open a file selector window as shown below. Using
-the file selector, you can choose where the exported file will be saved.
+the file selector, you can choose where the exported file will be saved and name the file.
 
 <<< IMAGE REQUIRED >>>
 
@@ -263,6 +265,12 @@ The reason we specify your **role** is so that *Teletubbies* can better accommod
 by providing you with the suitable features tailored to your needs.
 
 Once you set your profile up with the `profile` command, you should be good to go!
+
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Note: The `profile` command can only be used to set up your user profile once. To modify your name or role, please follow the steps [here](#frequently-asked-questions).
+
+</div>
 
 Format: `profile -n NAME -role ROLE`
 
@@ -664,18 +672,19 @@ If your changes to the data file makes its format invalid, Teletubbies will disc
 
 --------------------------------------------------------------------------------------------------------------------
 
-## FAQ
+## Frequently Asked Questions
 
 **Q**: How do I transfer my data to another Computer?<br>
+
 1. Install the *Teletubbies* app in the other computer.
 2. Use the [`export`](#exporting-contacts-export) command to export your contacts as a JSON file. Transfer the contacts file to the other computer.
 3. On the other computer, launch the *Teletubbies* app and use the [`import`](#importing-contacts--import) command to import the contacts file that you transferred over.
 
 **Q** How do I change my role after setting it once?<br>
-**A**:
+
 1. In the same folder as `teletubbies.jar`, look for the `preferences.json` file.
 2. Delete `preferences.json`, and start Teletubbies again.
-3. Now, you should be able to modify your role with the [profile](#setting-your-profile-profile) command.
+3. Now, you should be able to modify your role with the [`profile`](#setting-your-profile-profile) command.
 
 
 --------------------------------------------------------------------------------------------------------------------
