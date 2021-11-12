@@ -526,6 +526,8 @@ interface!
 
 [⏫ Back to content page](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Listing your previous commands: `history`
 
 The `history` command will help you to view all the commands that have been issued by you in the **current session**. You
@@ -686,6 +688,9 @@ Format: `add -n NAME -p PHONE_NUMBER [-a ADDRESS] [-e EMAIL]`
 Examples:
 * `add -n Betsy Crowe -p 12345678`
 > This command will add the contact details for "Betsy Crowe", with their phone number as "12345678".
+
+<div style="page-break-after: always;"></div>
+
 * `add -n John Snoe -p 98765432 -a Wall Street, Block 234, #08-06 -e johns@example.com`
 > In the example below, "John Snoe" has been added to Teletubbies with their phone number as "98765432", 
 > address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
@@ -715,6 +720,9 @@ Format: `delete -p PHONE_NUMBER` or `delete -i INDEX`
 Examples:
 * `delete -i 1`
 > This command will delete the contact details for the contact with the index 1.
+
+<div style="page-break-after: always;"></div>
+
 * `delete -p 98765432`
 > This command will delete the contact details for the contact with the phone number "98765432". In the example below, John Snoe has been deleted.
 > ![Delete](images/userGuide/deleteContact.png)
