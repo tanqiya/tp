@@ -5,7 +5,6 @@ title: User Guide
 
 ## Table of Contents
 <div class="toc-no-bullet-points">
-  * Table of Contents
   {:toc}
 </div>
 
@@ -16,7 +15,7 @@ title: User Guide
 ## **1. Introduction**
 
 Welcome to the ***Teletubbies User Guide***! This guide is designed to provide readers with an overview of how to use
-Teletubbies on a day-to-day basis.
+Teletubbies on a daily basis.
 
 Maybe you have just downloaded Teletubbies and want to learn about how to [get started](#3-quick-start).
 Maybe you are a current user and need a refresher on the [available commands](#6-command-summary).
@@ -31,11 +30,11 @@ Using Teletubbies, you can:
 
 * Manage customers' contact details
 * Manage and view your telemarketing progress (as a **Telemarketer**)
-* Manage and view telemarketing progress of telemarketers under you (as a **Telemarketing Supervisor**)
+* Manage and view telemarketing progress of telemarketers you are in charge of (as a **Telemarketing Supervisor**)
 
 Teletubbies is optimized for use via a Command Line Interface (CLI), meaning that most of the commands are issued
 by simply typing it into our application. If you are used to typing on a keyboard, you can get your telemarketing tasks
-done much faster! But don't worry if you aren't so used to typing fast - our clean, intuitive Graphical User Interface
+done much faster! But don't worry if you aren't so used to typing fast - our intuitive Graphical User Interface
 (GUI) will help you slowly adjust to using our CLI.
 
 With Teletubbies, your daily telemarketing workflow can be so much more efficient! So what are you waiting for?
@@ -59,7 +58,7 @@ through this User Guide and try out some of the available features!
 
 ### 2.2. Structure of this User Guide
 
-There are a lot of features included in Teletubbies. As a result, we have decided to structure our User Guide in a
+There are many useful features included in Teletubbies. As a result, we have decided to structure our User Guide in a
 manner that allows you to easily find what you are looking for, without getting overwhelmed.
 
 In [Section 1: Introduction](#1-introduction), you will find a general overview of what Teletubbies is about.
@@ -84,21 +83,20 @@ document.
 Each of these sections and their sub-sections are accessible through the Table of Contents, which can be found at the
 beginning of this document.
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Note:**<br>
 
-We have divided and categorised the [Features section](#4-features) into 4 categories in order to give you
+We have grouped the [Features](#4-features) into 4 categories in order to give you
 a bird’s eye view of some of the features available! You can peek into [System commands](#41-system-commands) to take a
 look at some of the system-level features available such as [help](#viewing-help-help) and
 [import](#importing-contacts-import). [Contact commands](#42-contact-commands) includes all the commands which allow you to
-modify the contacts in your contact list, while [List commands](#43-list-commands) includes commands to modify the list of
-contacts.
+modify the contacts in your contact list, while [List commands](#43-list-commands) includes commands to view a more specific list of contacts.
 </div>
 
 [⏫ Back to content page](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 ### 2.3. Reading this User Guide
 
@@ -114,7 +112,7 @@ move to your section of choice using the [Table of Contents](#table-of-contents)
 
 Alternatively, you may use the Windows shortcut **Ctrl + F** or the Mac shortcut **Command + F** to find specific keywords.
 
-The following subsections provide explanations on the various symbols and syntax used in this User Guide, as well as
+The following subsections provide explanations on the various symbols and formatting used in this User Guide, as well as
 the layout of the application's User Interface (UI). We recommend that you familiarise yourself with these subsections
 so that you may be able to understand our User Guide more intuitively.
 
@@ -140,7 +138,7 @@ Example of Additional Information!
 
 **Important Information**
 
-Messages that appear in an Important information block are important information that you should take note of when using
+Messages that appear in an Important information block are important information or warnings that you should take note of when using
 Teletubbies.
 
 <div markdown="block" class="alert alert-warning">
@@ -185,7 +183,7 @@ been successfully executed, and if not, it will display an appropriate error mes
 the main panel may also be updated based on the command executed.
 
 When entering a command, you may find it helpful to see a history of your previous commands. To do so, you can simply
-press UP or DOWN while typing to navigate through the command history list, or alternatively, you can use the
+[press UP or DOWN](#convenience-features) while typing to navigate through the command history list, or alternatively, you can use the
 [history command](#listing-your-previous-commands-history).
 
 [⏫ Back to content page](#table-of-contents)
@@ -204,7 +202,7 @@ If this sounds complicated, let's take a look at at an example:
 `add -n John Doe -p 91827364`
 
 In this example, the **command word** is `add`, the **flags** are `-n` and `-p`, and the **parameters** are `John Doe`
-and `91827364`. Here, each **parameter** corresponds to each **flag** to form a pair, and each of these pairs are
+and `91827364`. Here, each **parameter** corresponds to each **flag** to form a pair. Each of these pairs are
 specified in succession after the **command word**! 
 
 <div markdown="block" class="alert alert-info">
@@ -287,7 +285,7 @@ these specifications:
 
 <div style="page-break-after: always;"></div>
 
-## **3. Quick start**
+## **3. Quick Start**
 
 1. Ensure you have Java `11` or above installed on your Computer. Please refer to 
 [this article](https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk) for more
@@ -299,17 +297,19 @@ information on how to install Java `11`.
 
 4. Double-click the file to start the app. A GUI similar to below should appear in a few seconds. Note how the app contains some sample data.
 
-![Ui](images/Ui.png)
+  ![Ui](images/Ui.png)
 
 5. Type the command in the command box and press Enter to execute it.
 > E.g. typing **`help`** and pressing Enter will open the help window.<br>
 
+<div style="page-break-after: always;"></div>
+
 Some example commands you can try:
 
 * `list`: Lists all contacts.
-* `add -n John Doe -p 87654321`: Adds a contact named `John Doe` to Teletubbies, with the phone number 87654321.
-* `delete -i 3`: Deletes the 3rd contact shown in the current list.
-* `done 3`: Marks the 3rd contact shown in the current list as done.
+* `add -n Mark Tan -p 87654321`: Adds a contact named `Mark Tan` to Teletubbies, with the phone number 87654321.
+* `delete -i 2`: Deletes the contact named `Jennifer Liew`, which is the 2nd contact shown in the list on the previous page.
+* `done 1`: Marks the contact named `John Doe` as done, which is the 1st contact shown in the list on the previous page.
 * `clear`: Deletes all contacts.
 * `exit`: Exits the app.
 
@@ -424,6 +424,8 @@ selecting `File -> Import`. Once the command is issued, Teletubbies will open a 
 
 ![Before Import](images/userGuide/importBefore.png)
 
+<div style="page-break-after: always;"></div>
+
 **After Import:**
 
 ![After Import](images/userGuide/importAfter.png)
@@ -432,14 +434,9 @@ The data to be imported must be a JSON file, with the file extension `.json`.
 
 Format: `import`
 
-<div markdown="span" class="alert alert-warning">:exclamation: Caution:
-If the format of the selected data file is invalid, Teletubbies will start with an empty contact list!
-</div>
-
-<br>
-
-<div markdown="span" class="alert alert-warning">:exclamation: Caution:
-`import` will cause all our current contacts to be wiped from Teletubbies! If you wish to keep
+<div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
+* If the format of the selected data file is invalid, Teletubbies will start with an empty contact list!
+* `import` will cause all our current contacts to be wiped from Teletubbies! If you wish to keep
 your current contacts too, check out [merge](#merging-contacts-merge)!
 </div>
 
@@ -459,6 +456,8 @@ selecting `File -> Merge`. Once the command is issued, Teletubbies will open a f
 
 ![Before Import](images/userGuide/mergeBefore.png)
 
+<div style="page-break-after: always;"></div>
+
 **After Merge:**
 
 ![After Import](images/userGuide/mergeAfter.png)
@@ -467,7 +466,7 @@ The data to be imported and merged must be a JSON file, with the file extension 
 
 Format: `merge`
 
-<div markdown="span" class="alert alert-warning">:exclamation: Caution:
+<div markdown="span" class="alert alert-warning">:exclamation: **Caution:**
 This command should only be used if you are sure that you want to combine the new data to be imported with
 the current data in the application. The new data will overwrite the current data, so be careful!
 </div>
@@ -478,7 +477,7 @@ the current data in the application. The new data will overwrite the current dat
 
 #### Exporting contacts: `export`
 
-The `export` command will help you to export the current set of customer contact data in the application.
+The `export` command will help you to export selected customer contact data in the application.
 
 You can issue this command by either typing it into the CLI (`export`), or going to the menu bar at the top and
 selecting `File -> Export`. Note that there is a crucial difference here:
@@ -488,7 +487,7 @@ selecting `File -> Export`. Note that there is a crucial difference here:
 * If you select `File -> Export` through the GUI, Teletubbies will automatically export ALL contacts, regardless of
   tags.
 
-Once the command is issued as shown below, it will ask you to confirm the export.
+Once the command is issued, Teletubbies will ask you to confirm the export, as shown below.
 
 ![Before Export](images/userGuide/exportBefore.png)
 
@@ -518,8 +517,6 @@ interface!
 </div>
 
 [⏫ Back to content page](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 #### Listing your previous commands: `history`
 
@@ -583,6 +580,8 @@ the previous versions of Teletubbies.
 
 [⏫ Back to content page](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Redoing your previous commands: `redo`
 
 The `redo` command will help you to redo any `undo` command you have issued previously.
@@ -635,8 +634,6 @@ These commands are related to the contacts stored in Teletubbies. The commands a
 * [`remark`](#adding-a-remark-to-a-contact-remark)
 
 [⏫ Back to content page](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 #### Finding the index
 
@@ -929,8 +926,6 @@ These commands are related to the contact list stored in Teletubbies. The comman
 
 [⏫ Back to content page](#table-of-contents)
 
-<div style="page-break-after: always;"></div>
-
 #### Listing all contacts: `list`
 
 The `list` command will help you to view the entire contact list currently in Teletubbies.
@@ -1048,6 +1043,8 @@ command is obtained, you will continue to see that command on the text input box
 Once the most recent command is obtained, you will continue to see that command on the text input box.
 </div>
 
+<div style="page-break-after: always;"></div>
+
 * Pressing the **[TAB]** key after typing a command to automatically complete and suggest to you the required fields
 needed for the command word.
 
@@ -1068,14 +1065,14 @@ if you type `ad` and then press the **TAB** key, the given text will remain.
 
 <div style="page-break-after: always;"></div>
 
-##### Saving the data
+#### Saving the data
 
 Teletubbies automatically saves the data in the hard disk after any command that changes the data. There is no need to
 save manually.
 
 For exporting the current data as a separate JSON file, refer to [Exporting contacts](#exporting-contacts-export).
 
-##### Loading the data
+#### Loading the data
 
 Teletubbies will automatically load up the data from your previous session, allowing you to pick up right where you
 left off. There is no need to load manually.
@@ -1085,7 +1082,7 @@ For importing a contact list in the JSON file format into the application, refer
 For merging a contact list from your hard disk with the contact list on the application, refer to
 [Merging contact lists](#merging-contacts-merge)
 
-##### Editing the data
+#### Editing the data
 
 Teletubbies will save the data as a JSON file `[JAR file location]/data/teletubbies.json`. Advanced users are welcome
 to update data directly by editing that data file.
@@ -1130,7 +1127,7 @@ import the contacts file that you transferred over.
      }
    ```
 
-3. When you restart teletubbies, you should be able to modify your role with the [profile](#setting-your-profile-profile)
+3. When you restart Teletubbies, you should be able to modify your role with the [profile](#setting-your-profile-profile)
 command.
 
 [⏫ Back to content page](#table-of-contents)
@@ -1139,7 +1136,7 @@ command.
 
 <div style="page-break-after: always;"></div>
 
-## **6. Command summary**
+## **6. Command Summary**
 
 These are all the available commands in Teletubbies.
 
