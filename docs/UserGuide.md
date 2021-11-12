@@ -352,7 +352,8 @@ These commands are related to the Teletubbies application as a whole. The comman
 #### Viewing help: `help`
 
 Upon entering the `help` command, another window pops up with our comprehensive User Guide (as shown below) which you
-can read by scrolling up and down!
+can read by scrolling up and down! This command is especially useful for when you've forgotten the
+format of a particular command, or if you're unsure what commands are available at your disposal.
 
 ![helpPage](images/userGuide/helpPage.png)
 
@@ -416,7 +417,8 @@ If you are opening Teletubbies for the first time, you should be sure to set you
 
 #### Importing contacts: `import`
 
-The `import` command will help you to import a set of customer contact data into the application.
+The `import` command will help you to import a set of customer contact data into the application. If you are a 
+telemarketer you will likely use this command frequently to load customer contact lists from your supervisor.
 
 You can issue this command by either typing it into the CLI (`import`), or going to the menu bar at the top and
 selecting `File -> Import`. Once the command is issued, Teletubbies will open a file selector window as shown below.
@@ -448,7 +450,8 @@ your current contacts too, check out [merge](#merging-contacts-merge)!
 #### Merging contacts: `merge`
 
 The `merge` command is a special kind of importing, and it will help you to merge a set of customer contact data
-with the current data inside the application.
+with the current data inside the application. If you are supervisor, you will likely use this command frequently to
+update your contact list with the latest versions of your employees' contact lists.
 
 You can issue this command by either typing it into the CLI (`merge`), or going to the menu bar at the top and
 selecting `File -> Merge`. Once the command is issued, Teletubbies will open a file selector window as shown below.
@@ -478,7 +481,10 @@ the current data in the application. The new data will overwrite the current dat
 
 #### Exporting contacts: `export`
 
-The `export` command will help you to export selected customer contact data in the application.
+The `export` command will help you to export selected customer contact data in the application. If you are a
+supervisor, you will find this command especially useful when you want to generate contact lists for your employees.
+If you are a telemarketer, you will also find this command useful for sending your updated contact lists back to your
+supervisor.
 
 You can issue this command by either typing it into the CLI (`export`), or going to the menu bar at the top and
 selecting `File -> Export`. Note that there is a crucial difference here:
@@ -521,7 +527,8 @@ interface!
 
 #### Listing your previous commands: `history`
 
-The `history` command will help you to view all the commands that have been issued by you in the **current session**.
+The `history` command will help you to view all the commands that have been issued by you in the **current session**. You
+can use this command to retrieve and keep a record of previously used commands.
 
 The commands will be displayed in order from the most recently issued command to the earliest issued command.
 
@@ -953,9 +960,7 @@ When Teletubbies searches the contacts using the given keyword(s), it will only 
 of the contacts, not the **addresses** or the **email addresses**.
 
 The order of the keywords given does not matter, and any contact whose **name** contains any one of the
-keywords will be returned. However, Teletubbies will consider the keywords as full words, meaning that
-if a keyword `Han` is given, even if there is a contact with the name `Hans`, it will not be returned. It
-will only be returned if the keyword given is `Hans`.
+keywords will be returned.
 
 Format: `find KEYWORD [KEYWORD]…​`
 
@@ -984,7 +989,8 @@ be returned.
 #### Filtering contact list: `filter`
 
 The `filter` command will help you filter the current contact list using the given tag(s), and will change the contact
-list display to show only the contacts that are tagged with the given tag(s).
+list display to show only the contacts that are tagged with the given tag(s). This command can help you focus on
+specific contacts of interest (like contacts tagged as important) instead of scrolling through a long list of contacts.
 
 When issuing the `filter` command, you should specify at least one **tag name**. Tag values are optional, but can help
 to further narrow your filter if necessary.
