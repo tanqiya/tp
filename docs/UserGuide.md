@@ -387,10 +387,11 @@ Format: `profile -n NAME -role ROLE`
 Examples:
 * `profile -n David Wong -role Telemarketer`
 > This command will set your name as "David Wong" and your role as "Telemarketer".
-* `profile -n Anne Goh -role Supervisor`
-> This command will set your name as "Anne Goh" and your role as "Supervisor".
 * `profile -n -role Telemarketer`
 > This command will set your role as "Telemarketer".
+* `profile -n Anne Goh -role Supervisor`
+> This command will set your name as "Anne Goh" and your role as "Supervisor".
+> ![profile](images/userGuide/profileAnne.png)
 
 <div markdown="block" class="alert alert-info">
 
@@ -691,8 +692,8 @@ Examples:
 * `add -n Betsy Crowe -p 12345678`
 > This command will add the contact details for "Betsy Crowe", with their phone number as "12345678".
 * `add -n John Snoe -p 98765432 -a Wall Street, Block 234, #08-06 -e johns@example.com`
-> This command will add the contact details for "John Snoe", with their phone number as "98765432". It will
-> also add their address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
+> In the example below, "John Snoe" has been added to Teletubbies with their phone number as "98765432", 
+> address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
 > ![Add](images/userGuide/addContact.png)
 
 [⏫ Back to content page](#table-of-contents)
@@ -722,7 +723,7 @@ Examples:
 * `delete -i 1`
 > This command will delete the contact details for the contact with the index 1.
 * `delete -p 98765432`
-> This command will delete the contact details for the contact with the phone number "98765432". In this example below, John Snoe has been deleted.
+> This command will delete the contact details for the contact with the phone number "98765432". In the example below, John Snoe has been deleted.
 > ![Delete](images/userGuide/deleteContact.png)
 
 [⏫ Back to content page](#table-of-contents)
@@ -850,7 +851,7 @@ Examples:
 * `tagrm 1 -n Friend -v close`
 > This command will remove the tag `Friend: close` from the first contact in the list.
 * `tagrm 2 -n Friend`
-> In the example below, Bernice has the tag `Friend: close` removed :(.
+> In the example below, Bernice has the tag `Friend: close` removed :(
 > ![removeTag](images/userGuide/tagrm.png)
 
 [⏫ Back to content page](#table-of-contents)
