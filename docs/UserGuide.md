@@ -352,7 +352,8 @@ These commands are related to the Teletubbies application as a whole. The comman
 #### Viewing help: `help`
 
 Upon entering the `help` command, another window pops up with our comprehensive User Guide (as shown below) which you
-can read by scrolling up and down!
+can read by scrolling up and down! This command is especially useful for when you've forgotten the
+format of a particular command, or if you're unsure what commands are available at your disposal.
 
 ![helpPage](images/userGuide/helpPage.png)
 
@@ -416,7 +417,8 @@ If you are opening Teletubbies for the first time, you should be sure to set you
 
 #### Importing contacts: `import`
 
-The `import` command will help you to import a set of customer contact data into the application.
+The `import` command will help you to import a set of customer contact data into the application. If you are a 
+telemarketer you will likely use this command frequently to load customer contact lists from your supervisor.
 
 You can issue this command by either typing it into the CLI (`import`), or going to the menu bar at the top and
 selecting `File -> Import`. Once the command is issued, Teletubbies will open a file selector window as shown below.
@@ -448,7 +450,8 @@ your current contacts too, check out [merge](#merging-contacts-merge)!
 #### Merging contacts: `merge`
 
 The `merge` command is a special kind of importing, and it will help you to merge a set of customer contact data
-with the current data inside the application.
+with the current data inside the application. If you are supervisor, you will likely use this command frequently to
+update your contact list with the latest versions of your employees' contact lists.
 
 You can issue this command by either typing it into the CLI (`merge`), or going to the menu bar at the top and
 selecting `File -> Merge`. Once the command is issued, Teletubbies will open a file selector window as shown below.
@@ -478,7 +481,10 @@ the current data in the application. The new data will overwrite the current dat
 
 #### Exporting contacts: `export`
 
-The `export` command will help you to export selected customer contact data in the application.
+The `export` command will help you to export selected customer contact data in the application. If you are a
+supervisor, you will find this command especially useful when you want to generate contact lists for your employees.
+If you are a telemarketer, you will also find this command useful for sending your updated contact lists back to your
+supervisor.
 
 You can issue this command by either typing it into the CLI (`export`), or going to the menu bar at the top and
 selecting `File -> Export`. Note that there is a crucial difference here:
@@ -521,11 +527,14 @@ interface!
 
 #### Listing your previous commands: `history`
 
-The `history` command will help you to view all the commands that have been issued by you in the **current session**.
+The `history` command will help you to view all the commands that have been issued by you in the **current session**. You
+can use this command to retrieve and keep a record of previously used commands.
 
 The commands will be displayed in order from the most recently issued command to the earliest issued command.
 
 Format: `history`
+
+![history](images/userGuide/history.png)
 
 <div markdown="block" class="alert alert-info">
 
@@ -587,7 +596,7 @@ the previous versions of Teletubbies.
 
 The `redo` command will help you to redo any `undo` command you have issued previously.
 
-Suppose that you through you made a mistake, so you issued an `undo` command, only to realise later that
+Suppose that you thought you made a mistake, so you issued an `undo` command, only to realise later that
 it was actually the correct command! Well, you can simply issue the `redo` command to "undo" your `undo`, or
 simply put, redo a command that you thought was a mistake.
 
@@ -606,6 +615,8 @@ Format: `redo`
 The `clear` command will help you clear all contacts from the Teletubbies application.
 
 Format: `clear`
+
+![Clear](images/userGuide/clear.png)
 
 <div markdown="span" class="alert alert-warning">:exclamation: Caution:
 Do NOT issue this command unless you are absolutely sure that you want to clear the list.
@@ -679,12 +690,10 @@ Format: `add -n NAME -p PHONE_NUMBER [-a ADDRESS] [-e EMAIL]`
 Examples:
 * `add -n Betsy Crowe -p 12345678`
 > This command will add the contact details for "Betsy Crowe", with their phone number as "12345678".
-* `add -n John Doe -p 87654321 -a John Street, Block 123, #01-01`
-> This command will add the contact details for "John Doe", with their phone number as "87654321". It will
-> also add their address as "John Street, Block 123, #01-01".
 * `add -n John Snoe -p 98765432 -a Wall Street, Block 234, #08-06 -e johns@example.com`
 > This command will add the contact details for "John Snoe", with their phone number as "98765432". It will
 > also add their address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
+> ![Add](images/userGuide/addContact.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -712,8 +721,9 @@ Format: `delete -p PHONE_NUMBER` or `delete -i INDEX`
 Examples:
 * `delete -i 1`
 > This command will delete the contact details for the contact with the index 1.
-* `delete -p 87654321`
-> This command will delete the contact details for the contact with the phone number "87654321".
+* `delete -p 98765432`
+> This command will delete the contact details for the contact with the phone number "98765432". In this example below, John Snoe has been deleted.
+> ![Delete](images/userGuide/deleteContact.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -740,8 +750,9 @@ Examples:
 * `edit 1 -n Betsy Crower`
 > This command will edit the name of the first person in the list to be "Betsy Crower".
 * `edit 2 -p 91234567 -e johndoe@example.com`
-> This command will edit the phone number of the second person in the list to be "91234567", and the email address to be
+> In the example below, Bernice Yu's phone number has been edited to be "91234567", and the email address to be
 > "johndoe@example.com".
+> ![Edit](images/userGuide/edit.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -768,10 +779,11 @@ Format: `done INDEX [STATUS]`
 Examples:
 * `done 1`
 > This command will mark the first contact in the list as "Complete".
-* `done 2 -ong`
-> This command will mark the second contact in the list as "Ongoing".
-* `done 3 -inc`
-> This command will mark the third contact in the list as "Incomplete".
+* `done 2 -inc`
+> This command will mark the second contact in the list as "Incomplete".
+* `done 3 -ong`
+> In the example below, Charlotte has been marked as "Ongoing".
+> ![Done](images/userGuide/doneOngoing.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -805,12 +817,13 @@ Examples:
 
 * `tag 1 -n Friend`
 > This command will tag the first contact in the list with the tag `Friend`.
-* `tag 2 -n Friend -v close`
-> This command will tag the second contact in the list with the tag `Friend: close`.
 * `tag 4 -n Assignee -v Mel -s`
 > This command will tag the fourth contact in the list with the tag `Assignee: Mel`. Because of the `-s`, this tag will
 > only be editable / removable by users whose roles are set as "Supervisor" For more information on roles, refer to
 > [Setting your profile](#setting-your-profile-profile).
+* `tag 2 -n Friend -v close`
+> In the example below, Bernice has been given the tag `Friend: close`.
+> ![tag](images/userGuide/tag.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -834,10 +847,11 @@ Format:`tagrm INDEX -n TAGNAME [-v VALUE]`
 
 Examples:
 
-* `tagrm 1 -n Friend`
-> This command will remove the tag `Friend` from the first contact in the list.
-* `tagrm 2 -n Friend -v close`
-> This command will remove the tag `Friend: close` from the second contact in the list.
+* `tagrm 1 -n Friend -v close`
+> This command will remove the tag `Friend: close` from the first contact in the list.
+* `tagrm 2 -n Friend`
+> In the example below, Bernice has the tag `Friend: close` removed :(
+> ![removeTag](images/userGuide/tagrm.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -895,15 +909,12 @@ refer to [Finding the index](#finding-the-index).
 Format: `remark INDEX -r REMARK`
 
 Examples:
-* `remark 1 -r Not answering any calls`
-> This command will add the remark `Not answering any calls` to the first contact in the list.
 * `remark 1 -r `
 > This command will remove the existing remark from the first contact in the list.
-* `remark 2 -r Not answering any calls`
-* `remark 2 -r Need to call back for confirmation`
-> The first command will add the remark `Not answering any calls` to the second contact in the list. The second command
-> will then add the new remark `Need to call back for confirmation` to the second contact in the list, which will replace
-> the old remark `Not answering any calls`.
+* `remark 1 -r Not answering any calls`
+> This command will add the remark `Not answering any calls` to the first contact in the list.
+> ![remark](images/userGuide/remark.png)
+
 
 
 <div markdown="block" class="alert alert-info">
@@ -947,12 +958,7 @@ The `find` command will help you find relevant contacts whose **names** contain 
 When Teletubbies searches the contacts using the given keyword(s), it will only look at the **names**
 of the contacts, not the **phone numbers**, **addresses** or the **email addresses**.
 
-The order of the keywords given does not matter, and any contact whose **name** contains any one of the
-keywords will be returned. 
-
-For instance, `find alex david` may return something like:
-
-![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
+The order of the keywords given does not matter, and any contact whose **name** contains any one of the  keywords will be returned.
 
 Format: `find KEYWORD [KEYWORD]…​`
 
@@ -960,12 +966,12 @@ Examples:
 * `find John`
 > This command will return all contacts whose names contain "John", such as `John`, `john`, or `John Doe`. As mentioned
 > below, it is case-insensitive.
+* `find jo`
+> This command will return all contacts whose names contain "jo", such as `John` or `Joe`.
 * `find alex david`
 > This command will return all contacts whose names contain "alex" or "david" in no particular order, such as `Alex Yeoh`,
 > `david li`, or `David alex`.
-* `find jo`
-> This command will return all contacts whose names contain "jo", such as `John` or `Joe`.
-
+> ![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
 
 <div markdown="block" class="alert alert-info">
 
@@ -982,7 +988,8 @@ be returned.
 #### Filtering contact list: `filter`
 
 The `filter` command will help you filter the current contact list using the given tag(s), and will change the contact
-list display to show only the contacts that are tagged with the given tag(s).
+list display to show only the contacts that are tagged with the given tag(s). This command can help you focus on
+specific contacts of interest (like contacts tagged as important) instead of scrolling through a long list of contacts.
 
 When issuing the `filter` command, you should specify at least one **tag name**. Tag values are optional, but can help
 to further narrow your filter if necessary.
@@ -1010,6 +1017,7 @@ Examples:
 * `filter -t Friend -t Assignee:Ben`
 > This command will filter the displayed list to only users who have the tag `Friend` AND `Assignee: Ben`. Contacts
 > that have only one of the given tags will NOT be listed.
+> ![filter](images/userGuide/filter.png)
 
 [⏫ Back to content page](#table-of-contents)
 
