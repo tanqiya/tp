@@ -4,8 +4,10 @@ title: User Guide
 ---
 
 ## Table of Contents
-* Table of Contents
+<div class="toc-no-bullet-points">
+  * Table of Contents
   {:toc}
+</div>
 
 --------------------------------------------------------------------------------------------------------------------
 
