@@ -527,6 +527,8 @@ The commands will be displayed in order from the most recently issued command to
 
 Format: `history`
 
+![history](images/userGuide/history.png)
+
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Commands that will be displayed:**<br>
@@ -607,6 +609,8 @@ The `clear` command will help you clear all contacts from the Teletubbies applic
 
 Format: `clear`
 
+![Clear](images/userGuide/clear.png)
+
 <div markdown="span" class="alert alert-warning">:exclamation: Caution:
 Do NOT issue this command unless you are absolutely sure that you want to clear the list.
 </div>
@@ -679,12 +683,10 @@ Format: `add -n NAME -p PHONE_NUMBER [-a ADDRESS] [-e EMAIL]`
 Examples:
 * `add -n Betsy Crowe -p 12345678`
 > This command will add the contact details for "Betsy Crowe", with their phone number as "12345678".
-* `add -n John Doe -p 87654321 -a John Street, Block 123, #01-01`
-> This command will add the contact details for "John Doe", with their phone number as "87654321". It will
-> also add their address as "John Street, Block 123, #01-01".
 * `add -n John Snoe -p 98765432 -a Wall Street, Block 234, #08-06 -e johns@example.com`
 > This command will add the contact details for "John Snoe", with their phone number as "98765432". It will
 > also add their address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
+> ![Add](images/userGuide/addContact.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -712,8 +714,9 @@ Format: `delete -p PHONE_NUMBER` or `delete -i INDEX`
 Examples:
 * `delete -i 1`
 > This command will delete the contact details for the contact with the index 1.
-* `delete -p 87654321`
-> This command will delete the contact details for the contact with the phone number "87654321".
+* `delete -p 98765432`
+> This command will delete the contact details for the contact with the phone number "98765432". In this example below, John Snoe has been deleted.
+> ![Delete](images/userGuide/deleteContact.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -740,8 +743,9 @@ Examples:
 * `edit 1 -n Betsy Crower`
 > This command will edit the name of the first person in the list to be "Betsy Crower".
 * `edit 2 -p 91234567 -e johndoe@example.com`
-> This command will edit the phone number of the second person in the list to be "91234567", and the email address to be
+> In the example below, Bernice Yu's phone number has been edited to be "91234567", and the email address to be
 > "johndoe@example.com".
+> ![Edit](images/userGuide/edit.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -768,10 +772,11 @@ Format: `done INDEX [STATUS]`
 Examples:
 * `done 1`
 > This command will mark the first contact in the list as "Complete".
-* `done 2 -ong`
-> This command will mark the second contact in the list as "Ongoing".
-* `done 3 -inc`
-> This command will mark the third contact in the list as "Incomplete".
+* `done 2 -inc`
+> This command will mark the second contact in the list as "Incomplete".
+* `done 3 -ong`
+> In the example below, Charlotte has been marked as "Ongoing".
+> ![Done](images/userGuide/doneOngoing.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -805,12 +810,13 @@ Examples:
 
 * `tag 1 -n Friend`
 > This command will tag the first contact in the list with the tag `Friend`.
-* `tag 2 -n Friend -v close`
-> This command will tag the second contact in the list with the tag `Friend: close`.
 * `tag 4 -n Assignee -v Mel -s`
 > This command will tag the fourth contact in the list with the tag `Assignee: Mel`. Because of the `-s`, this tag will
 > only be editable / removable by users whose roles are set as "Supervisor" For more information on roles, refer to
 > [Setting your profile](#setting-your-profile-profile).
+* `tag 2 -n Friend -v close`
+> In the example below, Bernice has been given the tag `Friend: close`.
+> ![tag](images/userGuide/tag.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -834,10 +840,11 @@ Format:`tagrm INDEX -n TAGNAME [-v VALUE]`
 
 Examples:
 
-* `tagrm 1 -n Friend`
-> This command will remove the tag `Friend` from the first contact in the list.
-* `tagrm 2 -n Friend -v close`
-> This command will remove the tag `Friend: close` from the second contact in the list.
+* `tagrm 1 -n Friend -v close`
+> This command will remove the tag `Friend: close` from the first contact in the list.
+* `tagrm 2 -n Friend`
+> In the example below, Bernice has the tag `Friend: close` removed :(.
+> ![removeTag](images/userGuide/tagrm.png)
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -895,15 +902,12 @@ refer to [Finding the index](#finding-the-index).
 Format: `remark INDEX -r REMARK`
 
 Examples:
-* `remark 1 -r Not answering any calls`
-> This command will add the remark `Not answering any calls` to the first contact in the list.
 * `remark 1 -r `
 > This command will remove the existing remark from the first contact in the list.
-* `remark 2 -r Not answering any calls`
-* `remark 2 -r Need to call back for confirmation`
-> The first command will add the remark `Not answering any calls` to the second contact in the list. The second command
-> will then add the new remark `Need to call back for confirmation` to the second contact in the list, which will replace
-> the old remark `Not answering any calls`.
+* `remark 1 -r Not answering any calls`
+> This command will add the remark `Not answering any calls` to the first contact in the list.
+> ![remark](images/userGuide/remark.png)
+
 
 
 <div markdown="block" class="alert alert-info">
@@ -953,10 +957,6 @@ keywords will be returned. However, Teletubbies will consider the keywords as fu
 if a keyword `Han` is given, even if there is a contact with the name `Hans`, it will not be returned. It
 will only be returned if the keyword given is `Hans`.
 
-For instance, `find alex david` may return something like:
-
-![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
-
 Format: `find KEYWORD [KEYWORD]…​`
 
 Examples:
@@ -966,6 +966,7 @@ Examples:
 * `find alex david`
 > This command will return all contacts whose names contain "alex" or "david" in no particular order, such as `Alex Yeoh`,
 > `david li`, or `David alex`.
+> ![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
 
 
 <div markdown="block" class="alert alert-info">
@@ -1011,6 +1012,7 @@ Examples:
 * `filter -t Friend -t Assignee:Ben`
 > This command will filter the displayed list to only users who have the tag `Friend` AND `Assignee: Ben`. Contacts
 > that have only one of the given tags will NOT be listed.
+> ![filter](images/userGuide/filter.png)
 
 [⏫ Back to content page](#table-of-contents)
 
