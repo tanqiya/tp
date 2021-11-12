@@ -1052,11 +1052,11 @@ needed for the command word.
 <div markdown="block" class="alert alert-info">:information_source: Tip:
 For instance, pressing the **[TAB]** key after typing `add` produces `add -n -p -e -a` on the text input box.
 
-Here is an image of Teletubbies before pressing the **[TAB]** key: 
+Here is an image of the command box before pressing the **[TAB]** key: 
 
 ![Before pressing Tab](images/tab/GUIImageBeforeTab.png)
 
-And here is an image of Teletubbies after pressing the **[TAB]** key:
+And here is an image of the command box after pressing the **[TAB]** key:
 
 ![After pressing Tab](images/tab/GUIImageAfterTab.png)
 
