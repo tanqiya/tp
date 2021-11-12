@@ -11,6 +11,8 @@ title: User Guide
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **1. Introduction**
 
 Welcome to the ***Teletubbies User Guide***! This guide is designed to provide readers with an overview of how to use
@@ -39,9 +41,11 @@ done much faster! But don't worry if you aren't so used to typing fast - our cle
 With Teletubbies, your daily telemarketing workflow can be so much more efficient! So what are you waiting for?
 [Get started with Teletubbies](#3-quick-start)!
 
-<div style="page-break-after: always;"></div>
+[⏫ Back to content page](#table-of-contents)
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **2. About this User Guide**
 
@@ -50,6 +54,8 @@ With Teletubbies, your daily telemarketing workflow can be so much more efficien
 This User Guide is designed to help you become familiar with the features available in Teletubbies, and in the process,
 create a seamless user experience for you. Telemarketers and telemarketer supervisors, such as yourselves, can look
 through this User Guide and try out some of the available features!
+
+[⏫ Back to content page](#table-of-contents)
 
 ### 2.2. Structure of this User Guide
 
@@ -90,6 +96,10 @@ modify the contacts in your contact list, while [List commands](#43-list-command
 contacts.
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 ### 2.3. Reading this User Guide
 
 This User Guide is written with chronological navigation in mind. Users can scroll through the document to navigate from
@@ -107,6 +117,10 @@ Alternatively, you may use the Windows shortcut **Ctrl + F** or the Mac shortcut
 The following subsections provide explanations on the various symbols and syntax used in this User Guide, as well as
 the layout of the application's User Interface (UI). We recommend that you familiarise yourself with these subsections
 so that you may be able to understand our User Guide more intuitively.
+
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.1. Special Icons and Symbols
 
@@ -154,6 +168,10 @@ Teletubbies.
 
 > Example of a Quote!
 
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 #### 2.3.2. Layout of the UI
 
 Different sections of the Teletubbies application window will be referred to by the names described in the image
@@ -169,6 +187,10 @@ the main panel may also be updated based on the command executed.
 When entering a command, you may find it helpful to see a history of your previous commands. To do so, you can simply
 press UP or DOWN while typing to navigate through the command history list, or alternatively, you can use the
 [history command](#listing-your-previous-commands-history).
+
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.3. Command Flags
 
@@ -221,6 +243,10 @@ clearly outline which of these flags correspond to each of the commands, and wil
 what **parameters** they take in (or if they take in **parameters** at all).
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 #### 2.3.4. Command Format
 
 Commands that are discussed in this User Guide follow these specifications:
@@ -255,7 +281,11 @@ these specifications:
 * Parameters refer to information that is to be included as an input to a command.
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **3. Quick start**
 
@@ -285,7 +315,11 @@ Some example commands you can try:
 
 6. Refer to the [Features](#4-features) section for details of each command.
 
+[⏫ Back to content page](#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **4. Features**
 
@@ -310,6 +344,8 @@ These commands are related to the Teletubbies application as a whole. The comman
 * [`clear`](#clearing-all-entries-clear)
 * [`exit`](#exiting-the-program-exit)
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Viewing help: `help`
@@ -321,7 +357,7 @@ can read by scrolling up and down!
 
 Format: `help`
 
-<div style="page-break-after: always;"></div>
+[⏫ Back to content page](#table-of-contents)
 
 #### Setting your profile: `profile`
 
@@ -373,6 +409,8 @@ follow the steps [here](#5-faq).
 If you are opening Teletubbies for the first time, you should be sure to set your profile before doing any actions. 
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Importing contacts: `import`
@@ -405,6 +443,8 @@ If the format of the selected data file is invalid, Teletubbies will start with 
 your current contacts too, check out [merge](#merging-contacts-merge)!
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Merging contacts: `merge`
@@ -431,6 +471,8 @@ Format: `merge`
 This command should only be used if you are sure that you want to combine the new data to be imported with
 the current data in the application. The new data will overwrite the current data, so be careful!
 </div>
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -475,6 +517,8 @@ double-check if the contacts you want to export are accurate, saving you preciou
 interface! 
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Listing your previous commands: `history`
@@ -495,6 +539,8 @@ will be reset. The next time you start up Teletubbies, you will not be able to a
 previous session.
 
 </div>
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -535,6 +581,8 @@ session**. That is, once you close or exit Teletubbies and close your current se
 the previous versions of Teletubbies.
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 #### Redoing your previous commands: `redo`
 
 The `redo` command will help you to redo any `undo` command you have issued previously.
@@ -549,6 +597,8 @@ command!
 
 Format: `redo`
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Clearing all entries: `clear`
@@ -561,13 +611,15 @@ Format: `clear`
 Do NOT issue this command unless you are absolutely sure that you want to clear the list.
 </div>
 
-<div style="page-break-after: always;"></div>
+[⏫ Back to content page](#table-of-contents)
 
 #### Exiting the program: `exit`
 
 The `exit` command will help you gracefully exit Teletubbies.
 
 Format: `exit`
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -582,6 +634,10 @@ These commands are related to the contacts stored in Teletubbies. The commands a
 * [`tagrm`](#removing-tags-from-contacts-tagrm)
 * [`remark`](#adding-a-remark-to-a-contact-remark)
 
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 #### Finding the index
 
 When dealing with contacts in Teletubbies, you will often have to use something called the **index**
@@ -590,8 +646,9 @@ of the contact.
 To find out what the contact's index is, use the [List](#listing-all-contacts-list) feature to
 find what number the contact is associated with in the contact list.
 
-The index
-will always be a positive integer, i.e. 1, 2, 3, 4, ...
+The index will always be a positive integer, i.e. 1, 2, 3, 4, ...
+
+[⏫ Back to content page](#table-of-contents)
 
 #### Copying phone numbers
 
@@ -603,6 +660,8 @@ clipboard icon that looks like this: ![](images/icon_clipboard.png)
 
 When you click on the icon, it will copy the phone number to your clipboard, so that you can paste it onto
 your desktop calling app!
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -628,6 +687,8 @@ Examples:
 * `add -n John Snoe -p 98765432 -a Wall Street, Block 234, #08-06 -e johns@example.com`
 > This command will add the contact details for "John Snoe", with their phone number as "98765432". It will
 > also add their address as "Wall Street, Block 234, #08-06", and their email address as "johns@example.com".
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -656,6 +717,8 @@ Examples:
 * `delete -p 87654321`
 > This command will delete the contact details for the contact with the phone number "87654321".
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Editing a contact: `edit`
@@ -681,6 +744,8 @@ Examples:
 * `edit 2 -p 91234567 -e johndoe@example.com`
 > This command will edit the phone number of the second person in the list to be "91234567", and the email address to be
 > "johndoe@example.com".
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -709,6 +774,8 @@ Examples:
 > This command will mark the second contact in the list as "Ongoing".
 * `done 3 -inc`
 > This command will mark the third contact in the list as "Incomplete".
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -747,6 +814,8 @@ Examples:
 > only be editable / removable by users whose roles are set as "Supervisor" For more information on roles, refer to
 > [Setting your profile](#setting-your-profile-profile).
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Removing tags from contacts: `tagrm`
@@ -771,6 +840,8 @@ Examples:
 > This command will remove the tag `Friend` from the first contact in the list.
 * `tagrm 2 -n Friend -v close`
 > This command will remove the tag `Friend: close` from the second contact in the list.
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -810,6 +881,8 @@ Examples (`tagrm`):
 * `tagrm 1-5 -n Friend `
 > This command will remove the tag `Friend` from the first five contacts in the list.
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Adding a remark to a contact: `remark`
@@ -843,6 +916,8 @@ A contact can only have a maximum of **one** remark. If a contact already has a 
 will replace the existing remark.
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 ### 4.3. List commands
@@ -852,6 +927,10 @@ These commands are related to the contact list stored in Teletubbies. The comman
 * [`find`](#locating-contacts-by-name-find)
 * [`filter`](#filtering-contact-list-filter)
 
+[⏫ Back to content page](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 #### Listing all contacts: `list`
 
 The `list` command will help you to view the entire contact list currently in Teletubbies.
@@ -860,6 +939,8 @@ By listing all contacts, you will be able to find the number associated with a s
 with. This number is known as the `index` of the contact.
 
 Format: `list`
+
+[⏫ Back to content page](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
 
@@ -899,6 +980,8 @@ The search process is case-insensitive, meaning that if a keyword `hans` is give
 be returned.
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 #### Filtering contact list: `filter`
@@ -933,6 +1016,8 @@ Examples:
 > This command will filter the displayed list to only users who have the tag `Friend` AND `Assignee: Ben`. Contacts
 > that have only one of the given tags will NOT be listed.
 
+[⏫ Back to content page](#table-of-contents)
+
 <div style="page-break-after: always;"></div>
 
 ### 4.4. Other features
@@ -956,7 +1041,6 @@ of our convenience features in Teletubbies. These include:
 You can only access the previous commands up to the first command keyed in after starting Teletubbies. Once the earliest
 command is obtained, you will continue to see that command on the text input box.
 </div>
-
 
 * Pressing the **[DOWN]** arrow button on your keyboard to retrieve the command after the current command,
 
@@ -1011,6 +1095,8 @@ If your changes to the data file makes its format invalid, Teletubbies will disc
 data file at the next run!
 </div>
 
+[⏫ Back to content page](#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
@@ -1047,7 +1133,11 @@ import the contacts file that you transferred over.
 3. When you restart teletubbies, you should be able to modify your role with the [profile](#setting-your-profile-profile)
 command.
 
+[⏫ Back to content page](#table-of-contents)
+
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **6. Command summary**
 
@@ -1087,6 +1177,12 @@ List commands | Format
 **[find](#locating-contacts-by-name-find)** | `find KEYWORD [KEYWORD]…​`
 **[filter](#filtering-contact-list-filter)** | `filter -t TAGNAME[:TAGVALUE] [-t TAGNAME[:TAGVALUE]]…​ `
 
+[⏫ Back to content page](#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## **7. Glossary**
 
 This section serves to provide a summary of descriptions and definitions of terms used throughout this User Guide.
@@ -1101,6 +1197,12 @@ Term | Meaning
 **Command** | An instruction typed by a user, to be executed by Teletubbies.
 **Parameter** | Input to a command's field.
 
+[⏫ Back to content page](#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
 ## **8. Acknowledgements**
 
 This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org/).
@@ -1108,3 +1210,7 @@ This project is based on the AddressBook-Level3 project created by the [SE-EDU i
 During the development process, we have used the following libraries: 
 * [JavaFX](https://openjfx.io/)
 * [JUnit5](https://github.com/junit-team/junit5)
+
+[⏫ Back to content page](#table-of-contents)
+
+--------------------------------------------------------------------------------------------------------------------
