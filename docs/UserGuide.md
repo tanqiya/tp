@@ -313,16 +313,16 @@ Note that when you start the app for the first time, the app should contain some
 
 
 5. Try typing the following commands in the command box and press Enter to execute it.
-  > E.g. typing **`help`** and pressing Enter will open the help window.<br>
+    > E.g. typing **`help`** and pressing Enter will open the help window.<br>
 
-  Some example commands you can try:
+    Some example commands you can try:
 
-  * `list`: Lists all contacts.
-  * `add -n Mark Tan -p 87654321`: Adds a contact named `Mark Tan` to Teletubbies, with the phone number 87654321.
-  * `delete -i 2`: Deletes the contact named `Jennifer Liew`, which is the 2nd contact shown in the list on the previous page.
-  * `done 1`: Marks the contact named `John Doe` as done, which is the 1st contact shown in the list on the previous page.
-  * `clear`: Deletes all contacts.
-  * `exit`: Exits the app.
+    * `list`: Lists all contacts.
+    * `add -n Mark Tan -p 87654321`: Adds a contact named `Mark Tan` to Teletubbies, with the phone number 87654321.
+    * `delete -i 2`: Deletes the contact named `Jennifer Liew`, which is the 2nd contact shown in the list on the previous page.
+    * `done 1`: Marks the contact named `John Doe` as done, which is the 1st contact shown in the list on the previous page.
+    * `clear`: Deletes all contacts.
+    * `exit`: Exits the app.
 
 6. You're all set! Please refer to the [Features](#4-features) section for details on each command.
 
