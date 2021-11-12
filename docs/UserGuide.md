@@ -527,6 +527,8 @@ The commands will be displayed in order from the most recently issued command to
 
 Format: `history`
 
+![history](images/userGuide/history.png)
+
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Commands that will be displayed:**<br>
@@ -900,15 +902,12 @@ refer to [Finding the index](#finding-the-index).
 Format: `remark INDEX -r REMARK`
 
 Examples:
-* `remark 1 -r Not answering any calls`
-> This command will add the remark `Not answering any calls` to the first contact in the list.
 * `remark 1 -r `
 > This command will remove the existing remark from the first contact in the list.
-* `remark 2 -r Not answering any calls`
-* `remark 2 -r Need to call back for confirmation`
-> The first command will add the remark `Not answering any calls` to the second contact in the list. The second command
-> will then add the new remark `Need to call back for confirmation` to the second contact in the list, which will replace
-> the old remark `Not answering any calls`.
+* `remark 1 -r Not answering any calls`
+> This command will add the remark `Not answering any calls` to the first contact in the list.
+> ![remark](images/userGuide/remark.png)
+
 
 
 <div markdown="block" class="alert alert-info">
@@ -958,10 +957,6 @@ keywords will be returned. However, Teletubbies will consider the keywords as fu
 if a keyword `Han` is given, even if there is a contact with the name `Hans`, it will not be returned. It
 will only be returned if the keyword given is `Hans`.
 
-For instance, `find alex david` may return something like:
-
-![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
-
 Format: `find KEYWORD [KEYWORD]…​`
 
 Examples:
@@ -971,6 +966,7 @@ Examples:
 * `find alex david`
 > This command will return all contacts whose names contain "alex" or "david" in no particular order, such as `Alex Yeoh`,
 > `david li`, or `David alex`.
+> ![result for 'find alex david'](images/userGuide/findAlexDavidResult.png)
 
 
 <div markdown="block" class="alert alert-info">
@@ -1016,6 +1012,7 @@ Examples:
 * `filter -t Friend -t Assignee:Ben`
 > This command will filter the displayed list to only users who have the tag `Friend` AND `Assignee: Ben`. Contacts
 > that have only one of the given tags will NOT be listed.
+> ![filter](images/userGuide/filter.png)
 
 [⏫ Back to content page](#table-of-contents)
 
