@@ -3,7 +3,7 @@ layout: page
 title: User Guide
 ---
 
-## Table of Contents
+## **Table of Contents**
 <div class="toc-no-bullet-points">
   * Table of Contents
   {:toc}
@@ -51,9 +51,14 @@ With Teletubbies, your daily telemarketing workflow can be so much more efficien
 
 ### 2.1. Purpose of this User Guide
 
-This User Guide is designed to help you become familiar with the features available in Teletubbies, and in the process,
-create a seamless user experience for you. Telemarketers and telemarketer supervisors, such as yourselves, can look
-through this User Guide and try out some of the available features!
+This document is designed to provide documentation for people who will be using Teletubbies on a day-to-day basis.
+As most users of Teletubbies will have access to the features documented here, we recommend that you, as a user,
+read through this User Guide before using Teletubbies for the first time. 
+
+If you are a Telemarketer or a Telemarketer supervisor, this User Guide is designed to help you become familiar with the
+features available in Teletubbies, so that you may have a smooth and seamless user experience with us. Telemarketers and
+telemarketer supervisors, such as yourselves, should look through this User Guide and try out some of our available
+features!
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -288,19 +293,28 @@ these specifications:
 
 ## **3. Quick Start**
 
-1. Ensure you have Java `11` or above installed on your Computer. Please refer to 
-[this article](https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk) for more
-information on how to install Java `11`.
+1. Ensure you have Java `11` or above installed on your Computer. If not, you can install it from
+[here](https://www.oracle.com/sg/java/technologies/javase/jdk11-archive-downloads.html). Please ensure to download the
+correct version based on your operating system (e.g. Windows / macOS / Linux) and follow the Java installation
+instructions. For more information on how to install Java `11`, please refer to
+[this article](https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk).
+
 
 2. Download the latest `teletubbies.jar` from [here](https://github.com/AY2122S1-CS2103T-W15-4/tp/releases).
 
-3. Copy the file to the folder you want to use as the _home folder_ for your Teletubbies app.
 
-4. Double-click the file to start the app. A GUI similar to below should appear in a few seconds. Note how the app contains some sample data.
+3. Copy the file to the folder you want to use as the *home folder* for your Teletubbies app. For beginners, you can
+simply create a folder on your desktop and move the downloaded `teletubbies.jar` into the folder.
 
-  ![Ui](images/Ui.png)
 
-5. Type the command in the command box and press Enter to execute it.
+4. Double-click the file to start the app. A GUI similar to below should appear in a few seconds.
+Note that when you start the app for the first time, the app should contain some sample data.
+
+
+   ![Ui](images/Ui.png)
+
+
+5. Try typing the following commands in the command box and press Enter to execute it.
 > E.g. typing **`help`** and pressing Enter will open the help window.<br>
 
 <div style="page-break-after: always;"></div>
@@ -314,7 +328,7 @@ Some example commands you can try:
 * `clear`: Deletes all contacts.
 * `exit`: Exits the app.
 
-6. Refer to the [Features](#4-features) section for details of each command.
+6. You're all set! Please refer to the [Features](#4-features) section for details on each command.
 
 [⏫ Back to content page](#table-of-contents)
 
@@ -361,6 +375,8 @@ Format: `help`
 
 [⏫ Back to content page](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 #### Setting your profile: `profile`
 
 The `profile` command will help you to set your user profile for Teletubbies.
@@ -389,6 +405,9 @@ Examples:
 > This command will set your name as "David Wong" and your role as "Telemarketer".
 * `profile -n -role Telemarketer`
 > This command will set your role as "Telemarketer".
+
+<div style="page-break-after: always;"></div>
+
 * `profile -n Anne Goh -role Supervisor`
 > This command will set your name as "Anne Goh" and your role as "Supervisor".
 > ![profile](images/userGuide/profileAnne.png)
@@ -1131,21 +1150,21 @@ import the contacts file that you transferred over.
 1. In the same folder as `teletubbies.jar`, look for the `preferences.json` file.
 2. In `preferences.json`, locate the `isProfileSet` field and set it to false as follows:
 
-  ```
-     {
-      
-       ...
-      
-       "userProfile" : {
-         "name" : "",
-         "role" : "SUPERVISOR"
-       },
-       "isProfileSet" : false, // set this field to false
-      
-       ...
-              
-     }
-   ```
+    ```
+       {
+        
+         ...
+        
+         "userProfile" : {
+           "name" : "",
+           "role" : "SUPERVISOR"
+         },
+         "isProfileSet" : false, // set this field to false
+        
+         ...
+                
+       }
+    ```
 
 3. When you restart Teletubbies, you should be able to modify your role with the [profile](#setting-your-profile-profile)
 command.
