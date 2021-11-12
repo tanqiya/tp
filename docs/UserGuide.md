@@ -546,9 +546,6 @@ will be reset. The next time you start up Teletubbies, you will not be able to a
 previous session.
 
 </div>
-
-[⏫ Back to content page](#table-of-contents)
-
 <div style="page-break-after: always;"></div>
 
 #### Undoing your previous commands: `undo`
@@ -630,8 +627,6 @@ The `exit` command will help you gracefully exit Teletubbies.
 
 Format: `exit`
 
-[⏫ Back to content page](#table-of-contents)
-
 <div style="page-break-after: always;"></div>
 
 ### 4.2. Contact commands
@@ -676,14 +671,14 @@ your desktop calling app!
 
 #### Adding a contact: `add`
 
-The `add` command will help you to add a customer's contact details into Teletubbies. Once added,
+The `add` command will help you to add a contact to Teletubbies. Once added,
 you should be able to view their contact details on the contact list.
 
-Note that the customer's **name** and **phone number** are mandatory. Otherwise, Teletubbies
-(and you) will find it difficult to identify the customer!
+Note that the contact's **name** and **phone number** are mandatory. Otherwise, Teletubbies
+(and you) will find it difficult to identify the contact!
 
-Other than the **name** and the **phone number**, you can also indicate **address** and
-**email address**. Both **address** and **email address** are optional.
+You can also indicate the **address** and
+**email address** of a contact, both of which are optional fields.
 
 Format: `add -n NAME -p PHONE_NUMBER [-a ADDRESS] [-e EMAIL]`
 
@@ -710,9 +705,7 @@ phone number is associated with a contact in the contact list.
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tip:**<br>
-
-If you don't know what the index is, refer to [Finding the index](#finding-the-index)!
+**:bulb: Tip:** If you don't know what the index is, refer to [Finding the index](#finding-the-index)!
 
 </div>
 
@@ -731,13 +724,13 @@ Examples:
 
 #### Editing a contact: `edit`
 
-The `edit` command will help you to edit / update a customer's contact details in Teletubbies. Note that
+The `edit` command will help you to edit a customer's contact details in Teletubbies. Note that
 you can only edit the details for a contact that is already in Teletubbies' contact list.
 
 You can choose which contact to edit by using the contact's index. If you don't know what the index is, refer to
 [Finding the index](#finding-the-index).
 
-When editing the contact, you will be able to change four fields in total: the **name**,
+When editing the contact, you can change the following fields: the **name**,
 the **phone number**, the **address**, and the **email address** of the customer.
 
 Each field is treated as
@@ -749,6 +742,9 @@ Format: `edit INDEX [-n NAME] [-p PHONE] [-e EMAIL] [-a ADDRESS]`
 Examples:
 * `edit 1 -n Betsy Crower`
 > This command will edit the name of the first person in the list to be "Betsy Crower".
+
+<div style="page-break-after: always;"></div>
+
 * `edit 2 -p 91234567 -e johndoe@example.com`
 > In the example below, Bernice Yu's phone number has been edited to be "91234567", and the email address to be
 > "johndoe@example.com".
@@ -781,6 +777,9 @@ Examples:
 > This command will mark the first contact in the list as "Complete".
 * `done 2 -inc`
 > This command will mark the second contact in the list as "Incomplete".
+
+<div style="page-break-after: always;"></div>
+
 * `done 3 -ong`
 > In the example below, Charlotte has been marked as "Ongoing".
 > ![Done](images/userGuide/doneOngoing.png)
@@ -821,6 +820,9 @@ Examples:
 > This command will tag the fourth contact in the list with the tag `Assignee: Mel`. Because of the `-s`, this tag will
 > only be editable / removable by users whose roles are set as "Supervisor" For more information on roles, refer to
 > [Setting your profile](#setting-your-profile-profile).
+
+<div style="page-break-after: always;"></div>
+
 * `tag 2 -n Friend -v close`
 > In the example below, Bernice has been given the tag `Friend: close`.
 > ![tag](images/userGuide/tag.png)
@@ -849,6 +851,9 @@ Examples:
 
 * `tagrm 1 -n Friend -v close`
 > This command will remove the tag `Friend: close` from the first contact in the list.
+
+<div style="page-break-after: always;"></div>
+
 * `tagrm 2 -n Friend`
 > In the example below, Bernice has the tag `Friend: close` removed :(
 > ![removeTag](images/userGuide/tagrm.png)
@@ -968,6 +973,9 @@ Examples:
 > below, it is case-insensitive.
 * `find jo`
 > This command will return all contacts whose names contain "jo", such as `John` or `Joe`.
+
+<div style="page-break-after: always;"></div>
+
 * `find alex david`
 > This command will return all contacts whose names contain "alex" or "david" in no particular order, such as `Alex Yeoh`,
 > `david li`, or `David alex`.
@@ -1014,6 +1022,9 @@ Examples:
 * `filter -t Assignee:Ben`
 > This command will filter the displayed list to only users who have the tag `Assignee: Ben`. Persons with the
 > `Assignee: Sid` tag will NOT be listed.
+
+<div style="page-break-after: always;"></div>
+
 * `filter -t Friend -t Assignee:Ben`
 > This command will filter the displayed list to only users who have the tag `Friend` AND `Assignee: Ben`. Contacts
 > that have only one of the given tags will NOT be listed.
