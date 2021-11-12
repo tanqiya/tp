@@ -942,16 +942,13 @@ Format: `list`
 
 #### Locating contacts by name: `find`
 
-The `find` command will help you find the relevant contacts using the given keyword(s), and will change the contact list
-display to show only the contacts whose **names** contain the given keyword(s).
+The `find` command will help you find relevant contacts whose **names** contain the given keyword(s), and will update the contact list to display the search results.
 
 When Teletubbies searches the contacts using the given keyword(s), it will only look at the **names**
-of the contacts, not the **addresses** or the **email addresses**.
+of the contacts, not the **phone numbers**, **addresses** or the **email addresses**.
 
 The order of the keywords given does not matter, and any contact whose **name** contains any one of the
-keywords will be returned. However, Teletubbies will consider the keywords as full words, meaning that
-if a keyword `Han` is given, even if there is a contact with the name `Hans`, it will not be returned. It
-will only be returned if the keyword given is `Hans`.
+keywords will be returned. 
 
 For instance, `find alex david` may return something like:
 
@@ -966,6 +963,8 @@ Examples:
 * `find alex david`
 > This command will return all contacts whose names contain "alex" or "david" in no particular order, such as `Alex Yeoh`,
 > `david li`, or `David alex`.
+* `find jo`
+> This command will return all contacts whose names contain "jo", such as `John` or `Joe`.
 
 
 <div markdown="block" class="alert alert-info">
