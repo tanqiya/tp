@@ -587,7 +587,7 @@ the previous versions of Teletubbies.
 
 The `redo` command will help you to redo any `undo` command you have issued previously.
 
-Suppose that you through you made a mistake, so you issued an `undo` command, only to realise later that
+Suppose that you thought you made a mistake, so you issued an `undo` command, only to realise later that
 it was actually the correct command! Well, you can simply issue the `redo` command to "undo" your `undo`, or
 simply put, redo a command that you thought was a mistake.
 
